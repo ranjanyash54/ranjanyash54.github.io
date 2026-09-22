@@ -40,6 +40,17 @@ $type-size-6                : 0.75em;   // ~12px
 $type-size-7                : 0.6875em; // ~11px
 $type-size-8                : 0.625em;  // ~10px
 
+/* Body copy inside the main content area is set smaller than the root size.
+   It is expressed in rem so it resolves against the root (16px, 18px at
+   $medium) rather than compounding with whatever a wrapper inherits.
+   Section headings are pinned in rem too, so they keep the size they had
+   before the body copy was reduced instead of shrinking with it. */
+$content-font-size          : 0.75rem;   // 12px / 13.5px
+$content-h1-size            : 1.563rem;  // 25px / 28.1px
+$content-h2-size            : 1.25rem;   // 20px / 22.5px
+$content-h3-size            : 1rem;      // 16px / 18px
+$content-h4-size            : 0.75rem;   // 12px / 13.5px
+
 $global-font-family         : $sans-serif;
 $header-font-family         : $source-serif;
 $caption-font-family        : $source-serif;

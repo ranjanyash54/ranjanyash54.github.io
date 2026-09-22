@@ -4,6 +4,24 @@
 
 .archive {
   margin-bottom: 2em;
+  font-size: $content-font-size;
+
+  /* Headings keep their original size; only body copy is reduced. */
+  h1, .page__title {
+    font-size: $content-h1-size;
+  }
+
+  h2 {
+    font-size: $content-h2-size;
+  }
+
+  h3 {
+    font-size: $content-h3-size;
+  }
+
+  h4, h5, h6 {
+    font-size: $content-h4-size;
+  }
 
   @include breakpoint($medium) {
     @include span(12 of 12);
