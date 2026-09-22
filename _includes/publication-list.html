@@ -2,11 +2,12 @@
 <ul class="publication-list">
   {% for pub in publications %}
     <li class="publication-list__item">
-      <span class="publication-list__title">
-        {% if pub.paperurl %}<a href="{{ pub.paperurl }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}
-      </span>
+      <span class="publication-list__title">{{ pub.title }}</span>
       <span class="publication-list__authors">{{ pub.authors | replace: "Yash Ranjan", '<span class="publication-list__self">Yash Ranjan</span>' }}</span>
-      <span class="publication-list__venue">{{ pub.venue }}, {{ pub.date | default: "1900-01-01" | date: "%Y" }}</span>
+      <span class="publication-list__venue">
+        {{ pub.venue }}, {{ pub.date | default: "1900-01-01" | date: "%Y" }}{% if pub.paperurl %}
+        <a class="publication-list__link" href="{{ pub.paperurl }}">[Link]</a>{% endif %}
+      </span>
     </li>
   {% endfor %}
 </ul>
