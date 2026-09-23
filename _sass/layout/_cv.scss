@@ -1,0 +1,36 @@
+/* ==========================================================================
+   CV (embedded PDF)
+   ========================================================================== */
+
+.cv-actions {
+  margin: 0 0 1em;
+
+  .btn + .btn {
+    margin-left: 0.5em;
+  }
+}
+
+/* The PDF viewer. Sized against the viewport so the document gets as much
+   height as the screen allows, with a floor so it stays usable on short
+   windows. Desktop browsers render the PDF here with their own toolbar and
+   scrolling; mobile browsers largely refuse to embed PDFs at all, which is
+   why .cv-actions above always offers an explicit open/download path. */
+.cv-embed {
+  display: block;
+  width: 100%;
+  height: 85vh;
+  min-height: 600px;
+  border: 1px solid var(--global-border-color);
+  border-radius: 4px;
+  background-color: var(--global-bg-color);
+
+  @include breakpoint(max-width $small) {
+    height: 70vh;
+    min-height: 420px;
+  }
+}
+
+.cv-embed__fallback {
+  padding: 1.5em;
+  text-align: center;
+}
