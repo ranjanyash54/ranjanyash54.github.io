@@ -6,7 +6,8 @@
       <span class="publication-list__authors">{{ pub.authors | replace: "Yash Ranjan", '<span class="publication-list__self">Yash Ranjan</span>' }}</span>
       <span class="publication-list__venue">
         {{ pub.venue }}, {{ pub.date | default: "1900-01-01" | date: "%Y" }}{% if pub.paperurl %}
-        <a class="publication-list__link" href="{{ pub.paperurl }}">[Link]</a>{% endif %}
+        <a class="publication-list__link" href="{{ pub.paperurl }}">[Link]</a>{% endif %}{% if pub.codeurl %}
+        <a class="publication-list__link" href="{{ pub.codeurl }}">[Code]</a>{% endif %}
       </span>
     </li>
   {% endfor %}
