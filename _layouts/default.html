@@ -18,12 +18,11 @@ layout: compress
 
     {{ content }}
 
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
-    </div>
+    {% comment %}
+      Script-only include (MathJax, Mermaid). The visible footer bar was
+      removed; footer.html is no longer rendered.
+    {% endcomment %}
+    {% include footer/custom.html %}
 
     {% include scripts.html %}
 
