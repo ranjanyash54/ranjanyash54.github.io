@@ -5,4 +5,5 @@ authors: "Yash Ranjan, Artur Kumik, Rahul Sengupta, Anand Rangarajan, Sanjay Ran
 venue: "arXiv preprint"
 date: 2026-08-26
 paperurl: "https://arxiv.org/abs/2608.25275"
+codeurl: "https://github.com/ranjanyash54/PhaseShift"
 ---
