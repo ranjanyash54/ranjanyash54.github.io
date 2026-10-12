@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a second year PhD student in the Department of Computer Science at the University of Florida. My research interests are in data-driven simulation for intelligent transporation, scientific simulation and world models. I aim to apply generative modelling techniques to learn the latent interactions in the data to simulate new worlds that are grounded in the data. I finished my undergradute from BITS Pilani, majoring in Computer Science.
+I am a third year PhD student in the Department of Computer Science at the University of Florida, supervised by [Prof. Sanjay Ranka](https://sanjayranka.com/) and [Prof. Anand Rangarajan](https://www.cise.ufl.edu/~anand/). My research interest lies in applying machine learning techniques to build trustworthy and explainable world simulators. I apply these techniques in the fields of scientific simulation and transportation. <!--Add a line on specific machine learning techniques--> I finished my undergraduate from BITS Pilani, majoring in Computer Science, where I was supervised by [Prof. Subhrakanta Panda](https://www.bits-pilani.ac.in/hyderabad/subhrakantapanda/).
 
 ## Publications
 
